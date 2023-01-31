@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>MOST IMPORTANT HEADING</h1>
+        <h3>Less Important Heading</h3>
+    </header>
+    <nav>       <!--section of a page that links to other pages or to certain sections within the page. -->
+        <ul>
+            <li><a href="#">Home</a> </li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a> </li>
+        </ul>
+    </nav>
+    <article>
+        <section> <!--is a logical container of the page or article. can be used to divide up content within an article. eg, introduction, news, contacts.-->
+            <h1>Contents</h1>
+        </section>
+        <aside>related to environment</aside>
+    </article>
+    <article>
+        <h1>Article</h1>
+        <p>Article is a self-contained, independent piece of content that can be used and distributed 
+            separately from the rest of the page or site. This could be a forum post, a magazine or 
+            newspaper article, a blog entry, a comment, an interactive widget or gadget, or any other 
+            independent piece of content. 
+            The "article" element replaces the "div" element that was widely used in HTML4, along with an id or class.
+            
+            </p>
+            
+    </article>
+    <section>       <!--audios are embedded in two formats-->
+       1. <audio src="AUDIO FOR TRANSCRIBING-ASSIGNMENT 1.mp3">Transcription Audio</audio>  <!--this method doesn't work-->
+
+        2. <audio controls autoplay loop>                             <!--this method works for embedding audios in my browser-->
+           <source src="AUDIO FOR TRANSCRIBING-ASSIGNMENT 1.mp3" type="audio/mp3">  
+       </audio> <br/>
+       <audio src="https://www.youtube.com/watch?v=b5Sp0jIHDYE">unit</audio>
+       <!--Multiple <source> elements can be linked to different audio files. The browser will use the first recognized format.-->
+       <br/>
+           attributes for audio; Controls(play/pause), autoplay, and loop.(on repeat) <br/>
+           supported formarts (MP3, WAV, and OGG.)
+    </section>
+    <hr/>
+    <section> <!--drawing shapes with SVG-->
+        <svg width="500" height="150"> 
+            <circle cx="180" cy="80" r="50" fill="green"/>  <!--cx; right. cy;down. r;radius.fill;color. stroke;outline-->
+        </svg> <!--@ shape with its svg-->
+        <svg width="100" height="100"> 
+            <rect width="300" height="100" x="20" y="20" fill="blue">
+        </svg>
+        <svg width="400" height="90"> 
+            <line x1="10" y1="10" x2="200" y2="100" 
+            style="stroke:#000000"; stroke-linecap:round; 
+            stroke-width: 20" />    <!--(x1, y1); (x2, y2) define the start & end coordinates.-->
+        </svg>
+        <svg width="2000" height="250"> 
+            <polyline style="stroke-linejoin: miter;
+            stroke: black;
+            stroke-width: 12; fill: none;"
+            points="100 100, 150 150, 200 100"/>
+        </svg> <!--black check-->
+        <svg height="500" width="1000">
+            <ellipse cx="200" cy="100" rx="150" ry="70" style="fill:purple">
+        </svg>
+        <svg width="500" height="500">
+            <polygon points="20 20, 40 40, 30 0" 
+                style="fill:green; stroke:black;"/>             
+        </svg>
+        
+    </section>
+    <section> <!--animated shapes-->
+        <svg width="1000" height="250">
+            <rect width="150" height="150" fill="orange">
+                <animate attributeName="x" from="0" to="300" dur="3s" fill="remove" repeatCount="2"/>
+                <!--attname;specifies movement axis] [from & to; start & end value] [dur;time taken] [fill "freeze";maintains end position, "remove";resets the value] [repeatCount="indefinite" continuously moving;-->
+            </rect>
+        </svg>
+        <div>   <!--Path Element--> <!-- commands are available for path data: M: moveto,  L: lineto H: horizontal lineto V: vertical lineto C: curveto S: smooth curveto
+            Q: quadratic Bézier curve T: smooth quadratic Bézier curveto  A: elliptical Arc  Z: closepath-->
+            <svg width="500" height="500">
+            <path d="M 0 0 L200 200 L200 0 Z" style="stroke:#000; fill:none;" />    <!--capital letters indicate absolute position, small letters are for relative-->
+                <!--M places "virtual pen" at position 0,0. it then moves 200px down to right, moves to position 200,0. Z closes the shape resulting to a hypotenuse-->
+        </svg>        
+        </div>
+        <div> <!--Canvas element; it is a container for graphics. scripts are used to draw the graphics- javascript-->
+            <canvas id="canvas1" width="400" height="300"> </canvas> <!--it must have an id attribute for javaScript reference-->
+            <script> var can = document.getElementById("canvas1");
+                var ctx = can.getContext("2d");    
+            </script>       <!--getContext() returns a drawing context on the canvas. requires basic knowledge in java.-->
+            
+            <canvas id="canvas1" width="400" height="300"> </canvas>
+            <script>
+                var c=document.getElementById("canvas1");
+                var ctx=c.getContext("2d");
+                ctx.fillRect(20,20,100,100);    
+            </script>       <!--fillRect(x,y,w,h) draws a filled rectangle with default color black-->
+            
+            <canvas id="canvas2" width="800" height="600"> </canvas>
+            <script>
+                var canvas=document.getElementById("canvas2");
+                var ctx=canvas.getContext("2d");
+                ctx.fillStyle ="rgba(0, 200, 0, 1)";
+                ctx.fillRect (36, 10, 22, 22);
+            </script>
+            
+            <canvas id="canvas4" width="1200" height="900"> </canvas>
+            <script>
+                var canvas=document.getElementById("canvas4");
+                var ctx=canvas.getContext("2d");
+                ctx.font="bold 22px Tahoma";
+                ctx.textAlign="start";
+                ctx.fillText("start", 10, 30);
+                ctx.translate(100,150);   //translate(x,y) method is used to move the Canvas.    
+                ctx.fillText("after translate" , 10, 30);
+                ctx.rotate(1);
+                ctx.fillText("after rotate", 0, 0);
+                ctx.scale(1.5, 4);      //This will scale the canvas 1.5 times in the X-direction, and 4 times in Y
+                ctx.fillText("after scale", 0,20);  //scaling a drawing scales future drawings
+            </script>  
+
+            <canvas id="canvas5" width="1200" height="900"> </canvas>
+            <script>
+                var canvas=document.getElementById("canvas5");
+                var ctx=canvas.getContext("2d");
+                ctx.fillStyle = "#FF0000";
+                ctx.fillRect (10,10, 100, 100);     //before rotation
+
+                ctx.rotate ((Math.PI / 180) * 25); //rotate 25 degrees. value must be in radians, not degrees
+                ctx.fillStyle = "#0000FF";
+                ctx.fillRect(10,10, 100, 100);
+            </script>
+            
+            <!--Draw a Line
+                    moveTo(x,y): Defines the starting point of the line.
+                    lineTo(x,y): Defines the ending point of the line.
+
+                    Draw a Circle
+                    beginPath(): Starts the drawing.
+                    arc(x,y,r,start,stop): Sets the parameters of the circle.
+                    stroke(): Ends the drawing.
+
+                    Gradients
+                    createLinearGradient(x,y,x1,y1): Creates a linear gradient.
+                    createRadialGradient(x,y,r,x1,y1,r1): Creates a radial/circular gradient.
+
+                    Drawing Text on the Canvas
+                    Font: Defines the font properties for the text.
+                    fillText(text,x,y): Draws "filled" text on the canvas.
+                    strokeText(text,x,y): Draws text on the canvas (no fill).-->
+        </div>
+        <div>
+            <h1>Canvas vs. SVG</h1>
+            <h2>Canvas</h2>
+            <p>               
+                - Elements are drawn programmatically <br/>
+                - Drawing is done with pixels <br/>
+                - Animations are not built in <br/>
+                - High performance for pixels-based drawing operations <br/>
+                - Resolution dependent <br/>
+                - No support for event handlers <br/>
+                - You can save the resulting image as .png or .jpg <br/>
+                - Well suited for graphic-intensive games             
+               </p>
+               <h2>SVG</h2>
+               <p> 
+                - Elements are part of the page's DOM (Document object model) <br/>
+                - Drawing is done with vectors <br/>
+                - Effects, such as animations are built in
+                - Based on standard XML syntax, which provides better accessibility <br/>
+                - Resolution independent <br/>
+                - Support for event handlers <br/>
+                - Not suited for game applications <br/>
+                - Best suited for applications with large rendering areas (for example, Google Maps)</p>
+        </div>
+    </section>
+    <section>
+        <form autocomplete="off">          <!--Use the novalidate attribute to avoid form validation on submissions.-->
+            <label> Your name:</label>
+            <input id="user" name="username" type="text" />
+            <label for="email">Your e-mail address: </label>
+            <input type="text" name="email" placeholder="email@example.com" autofocus/> <!--autofocus attribute makes the desired input focus when the form loads:-->
+            <br/>
+            <label for="e-mail">Your e-mail address: </label>
+            <input name="Email" type="text" required/>  <!--The form will not be submitted without filling in the required fields.-->
+            <input type="submit" value="submit"/>   
+        </form> <!--The required attribute tells the browser that the input is required.-->
+        <h2>HTML5 added several new input types:</h2>
+        <p>
+            - color - date - datetime - datetime -local - email  - month - number  - range
+            - search  - tel   - time - url   - week
+           </p>
+           <h2>New input attributes in HTML5:</h2>
+           <p>            
+            - autofocus  - form     - formaction     - formenctype  - formmethod    - formnovalidate
+            - formtarget     - height and width      - list     - min and max   - multiple
+            - pattern (regexp)  - placeholder   - required   - step
+           </p>
+
+        <!--Creating a searchbox-->             <!--other types; "url" and "tel".-->
+        <input id="mysearch" name="searchitem" type="search" placeholder="search"> <!-- search input type can be used to create a search box-->
+        <!--the name is important to enable submission of the input-->
+        <input id="car" type="text" list="colors" placeholder="pick a color" />
+        <datalist id="colors">          <!--The ID of the datalist element must match with the list attribute of the input box.-->
+            <option value="Red"></option>
+            <option value="Green"></option>
+            <option value="Yellow"></option>
+        </datalist>
+    </section>
+    <section>
+        video container
+        <!-- <video src="https://www.youtube.com/watch?v=b5Sp0jIHDYE"></video> -->
+        <video controls>
+            <source src="CHIDINMA - Jehovah Overdo (Official Video).mp4" type="video/mp4">
+            <source src="CHIDINMA - Jehovah Overdo (Official Video).ogg" type="video/0gg">
+
+        </video>
+        attributes for video; Controls(play/pause), autoplay, and loop.(on repeat) <br/>
+           supported formarts (MP3, WebM, and OGG.)
+    </section>
+    status: <progress min="0" max="100" value="35"></progress> <br/>
+
+    <navigator class="geolocation getCurrentPosition">area</navigator>
+    <footer>
+        Terms of Use
+    </footer>
+</body>
+</html>

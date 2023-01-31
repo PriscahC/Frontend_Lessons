@@ -1,0 +1,130 @@
+*{
+    padding: 0px;
+    margin:0px;
+}
+.heading{
+    padding: 10px 30px;
+    display: flex;
+}
+.headingLeft{
+    height: 100px;
+    width: 20%;
+    text-align: center;
+}
+.headingRight{
+    height: 100px;
+    width: 80%;
+    display: flex;
+}
+.headingRight h1{
+    margin-top: 20px;
+    color: brown;
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+}
+.headingRight span{
+    color: grey;
+}
+.vrTitle{
+    width: 50px;
+    height: 20px;
+    padding: 15px;
+    margin-top: 30px;
+    background-color: brown;
+    border-radius: 0px 15px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    transform: rotateZ(270deg);
+    font-size: 20px;
+}
+.topSecond{
+    height: 50px;
+   display: flex;
+   color: white;
+   font-size: 14px;
+}
+.topSecondLeft{
+    width: 20%;
+     padding: 15px 30px;
+    background-color: grey;
+}
+.topSecondRight{
+    width: 80%;
+    font-size: 18px;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     padding: 15px 30px;
+    background-color: brown;
+}
+.midSect{
+    display: flex;
+}
+.midSectLeft{
+    width: 20%; 
+    padding: 15px 20px 15px 30px;
+    height: 930px; 
+    background-color: brown;
+}
+.midSectLeft h4{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 15px;
+}
+.midSectLeft p{
+    color: white;
+    font-size: 17px;
+    text-align:justify;
+}
+.midSectRight{
+    width: 80%;
+    height: 930px; 
+}
+.topImage{
+    height: 400px;
+    background-color: orange;
+}
+.topImage img{
+    min-width: 100%;
+}
+.midSectMain{
+    padding: 30px 30px 15px 15px;
+}
+.midSectMain h1{
+    color: green;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.medSectMainInn{
+    columns: 2;
+}
+.btmTop{
+   display: flex;
+}
+.btmTopLeft{
+    width: 20%;
+    height: 100px;
+    background-color: white;
+    padding: 15px 15px 15px 30px;
+}
+.btmTopCenter{
+    width: 40%;
+    height:100px; 
+    background-color: Orange;
+    padding: 15px 0px;
+}
+.btmTopRight{
+    width: 40%;
+    height: 100px; 
+    background-color: green;
+    padding: 15px 30px 15px 15px;
+}
+.btmBtm{
+    padding: 15px 30px;
+    background-color: gray;
+    color: white;
+    font-size: 18px;
+}

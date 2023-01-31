@@ -1,0 +1,39 @@
+
+html {
+    background-color: #F2C5B2;
+}
+.main {
+    padding: 50px;
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+    width: 80%;
+    margin-left: 250px;
+
+}
+.title a {
+    text-decoration: none;
+    font-family: 'Sacramento', cursive;
+    font-size: 30px;
+}
+
+.icons {line-height: 50px; margin: 100px 50px;
+}
+
+.center {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% auto ;    
+    
+    padding: 50px 100px;
+    
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 75% 15%;
+    margin-top: 150px;
+}

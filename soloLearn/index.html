@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div id="container">
+            <div id="box"></div>
+        </div>
+        <button onclick="show()">Click Me</button>
+        <h1>Click the Circle to Know the Date</h1>
+        <div id="circle"></div>
+        <p> </p>
+        <div>
+            <button onclick="prev()">Prev</button>
+            <img id="slider" 
+            src="https://i.pinimg.com/236x/0f/93/f8/0f93f8864b60b141df345071e0aa3342.jpg" alt="">
+            <button onclick="next()">Next</button>
+        </div>
+        <div>
+            <form onsubmit="return validate()" method="get">    <!--use post to see effect on submission-->
+                Number: <input type="text" name="num1" id="num1"/>
+                <br/>
+                Repeat: <input type="text" name="num2" id="num2"/>
+                <br/>
+                <input type="submit" value="Submit" >
+            </form>
+        </div>
+    </div>
+    <script src="/js/solo.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+
+html {
+    background-color: #fcf3ef;
+    viewport-fit:  100%;
+}
+.main {
+    padding: 100px;
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+    width: 80%;
+    margin-left: 200px;
+}
+.title a {
+    text-decoration: none;
+    font-family: 'Sacramento', cursive;
+    font-size: 30px;
+}
+.headline {
+    height: 30%;        
+}
+
+.icons {line-height: 50px; margin: 100px 50px;
+}
+
+.center {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% auto ;    
+    
+    padding: 50px 100px;
+    
+}
+.title2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    width: 80vw;
+    width: 80%;
+    margin-top: 50px;
+}
+.center hr {
+    width: 80%;
+    margin-left: 0px;
+}
+.title2 a {
+    text-decoration: none;
+    font-family: IBM Plex Serif,regular;
+    font-size: 20px;
+    margin-top: -50px;
+
+}
+.display {
+    display: grid;
+    align-items: center;
+    margin-top: 30px;
+    grid-template-columns: auto auto auto auto;
+    width: 80%;  
+    margin-bottom: 60px;  
+}
+.display h1 {
+    font-weight: 100;    
+}
+.display h2 {   
+    display: grid;
+    grid-template-columns: 60% auto;
+    
+}
+.display button {
+    background-color: #F2C5B2;
+    border: none;
+    padding: 5px;
+}
+.display h3 {
+    color: red;   
+    margin-top: -20px; 
+}
+fieldset {
+    width: 72%;
+    border: none;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0 60px;
+    margin-top: -20px;
+    width: 100%;
+    margin-left: 150px;
+}
+.ps {
+    font-family: 'Sacramento', cursive;
+    font-size: 25px;
+}

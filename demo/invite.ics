@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//swoogo.com//NONSGML kigkonsult.se iCalcreator 2.27.21//
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+UID:52434a8db90b8c3b0cdd21fc96e0b6a151a7d0b7@swoogo.com
+DTSTAMP:20220406T073307Z
+DESCRIPTION:Excited for you join us at Team '22. \n\nApril 5-7 In-Person in
+  Las Vegas\nApril 6-7 Digital Experience\n\n \n
+DTSTART:20220405T070000Z
+DTEND:20220407T070000Z
+LAST-MODIFIED:20220406T073307Z
+LOCATION:The Venetian Resort Las Vegas\, 201 Sands Ave\, Las Vegas\, NV 891
+ 69\, United States
+ORGANIZER;CN=Atlassian Events:team@atlassianevents.com
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Atlassian Team 22
+TRANSP:OPAQUE
+X-ALT-DESC;FMTTYPE=text/html:<p>Excited for you join us at Team '22. </p>\n
+ \n<p>April 5-7 In-Person in Las Vegas<br />\nApril 6-7 Digital Experience<
+ /p>\n\n<p> </p>
+END:VEVENT
+END:VCALENDAR

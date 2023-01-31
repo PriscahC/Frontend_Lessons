@@ -1,0 +1,87 @@
+
+html {
+    background-color: #fcf3ef;
+}
+.main {
+    padding: 100px;
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+    width: 80%;
+    margin-left: 200px;
+}
+.title a {
+    text-decoration: none;
+    font-family: 'Sacramento', cursive;
+    font-size: 30px;
+}
+.headline {
+    height: 30%;
+    position: relative;
+    
+}
+
+.icons {line-height: 50px; margin: 100px 50px;
+}
+.shptxt {
+   
+    position: absolute;
+    top: 120px;
+    margin-left: 100px;
+    line-height: 80px;
+}
+
+.center {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% auto ;    
+    
+    padding: 50px 100px;
+    
+}
+.title2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    width: 80vw;
+    width: 80%;
+}
+.center hr {
+    width: 80%;
+    margin-left: 0px;
+}
+.title2 a {
+    text-decoration: none;
+    font-family: IBM Plex Serif,regular;
+    font-size: 20px;
+    margin-top: -50px;
+
+}
+.display {
+    display: grid;
+    align-items: center;
+    margin-top: 30px;
+    grid-template-columns: auto auto auto auto;
+    width: 80%;  
+    margin-bottom: 60px;  
+}
+.display h1 {
+    font-weight: 100;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0 60px;
+    margin-top: -20px;
+    width: 100%;
+    margin-left: 150px;
+}
+.ps {
+    font-family: 'Sacramento', cursive;
+    font-size: 25px;
+}

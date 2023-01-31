@@ -1,0 +1,496 @@
+/*This is a CSS Demo. comments are placed in these tags*/
+header p:first-child{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    font-style: italic; /*only italic applies here*/
+    font-weight: 800; /*boldness or lightness*/
+}
+header p:nth-child(2){
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    font-weight: 200; 
+    font-variant: small-caps; /*means small capital letters. other variants; normal & inherit*/
+    color: blueviolet;
+    text-align: center;     /*aligns horizontally: left(default)| center | right & justify*/
+}
+section{
+    height: 5000px;
+}
+section p:first-child {     /*:first-child and :last-child are pseudo classes*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    text-align: justify;     /*aligns horizontally: left(default)| center | right & justify*/
+}
+table {                        
+    border: 1px solid grey;
+    padding: 2px;
+    height: 250px;
+    width: 70%;
+    font-size: 30px;
+    color: orangered;
+}
+td.top {
+    vertical-align: top;
+    border: 1px solid grey;     /*without the 'solid' the border doesn't show*/
+}
+td.middle {
+    vertical-align: middle;
+    border: 1px solid grey;
+}
+td.bottom {
+    vertical-align: bottom;
+    border: 1px solid grey;           /*we've created a table to illustrate vertical alignment*/
+} 
+.p2 {            /*hakuna second child, use n-th child | last-child*/  /*easier to assign classes if stylng as you go*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    font-weight: 200; 
+    font-variant: small-caps; /*means small capital letters. other variants; normal & inherit*/
+    color: blueviolet;
+    text-align: right;     
+    text-decoration: underline; /*other values include: none, inherit,overline,line-through & (blink-ignored by browsers)*/
+}  
+.p3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    text-align: justify; 
+    text-indent: 60px;  /*only works on 1st line; could be +ve or -ve*/
+    white-space: nowrap; /*makes the line text continuous until you put a line break. other line breaks are normal & inherit*/
+}   
+.LaTene{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 200; 
+    color: blueviolet;
+    text-shadow:5px 5px 4px grey;    /*x-shift, y-shift, blur-value, color*/
+    /*text shadow won't appear unless color value is specified*/
+    text-align: center;
+    letter-spacing: 20px;
+}
+section h2{
+    font-size: 20pt;
+    text-shadow: rgba(0, 0, 255, 1) -1px -2px 0.5em;  /*outward shadow creating a blur effect*/
+    text-align: center;
+    text-transform: uppercase; /*capitalize-1st letters, lowercase*/
+    word-spacing: 30px;
+}
+
+
+/*WHITE SPACE*/
+p.pre {                 /*before the stylings the spaces weren't shown*/
+    white-space: pre;
+}
+p.preline {
+    white-space: pre-line;
+}
+p.prewrap {
+    white-space: pre-wrap;
+}
+.Wspace {
+    background-color: rgba(0, 255, 255, 0.5);
+    width: 50%;  /*max-width | min-width*/
+    /*height:; | max-height:; | min-height:; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    border: 5px solid grey;  /*border-width | border-style(important) | border-color*/
+    border-style: dashed;     /*dashed dotted double grooved ridged inset outset hidden*/   
+}
+.Wspace p::before {
+    content: url("/android-cart.png");
+}
+.Wspace p::after {
+    content: url("/android-cart.png");
+}
+
+.Divs {
+    display: flex;
+}
+
+/*BACKGROUND IMAGE*/
+.right {
+    min-height: 100px;
+    width: 50%;
+    background-image: url(/3d.png);
+    /*background-repeat: n0-repeat;       /*repeat-x | repeat-y | inherit*/
+    /*background-attachment:fixed; | scroll*/
+    /*background-size: 100px 100px;*/
+    background-size: contain; /*contain; fits image within frame. | cover; clips image |*/
+    opacity: 0.5;
+    /*filter: alpha(opacity=50);  added for the code to work with internet explorer*/
+    /*opacity ranges between 0.0 to 1.0*/    
+}
+
+
+/*LISTS*/
+.ul1 {
+    /* list-style-type: disc; circle square decimal lower-alpha*/
+   /* list-style-image: url("/3d.png");
+    list-style-position:inside;*/
+    list-style: circle inside url("/android-cart.png"); /*puzzled how to adjust the image size. big picture stays as it is*/
+}
+
+
+/*TABLES*/
+.div3 {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.tab1 {
+    border-collapse: separate;
+    border-spacing: 20px 40px;
+    empty-cells: hide;
+    /*table-layout: fixed;   | auto;     (fixed)fixes the size of rows and coloms and extra information spills oer to the next cell*/
+    /*border: 1px solid gray;   only creates outside border*/
+}
+caption {
+    caption-side: top;  /*can be botom*/
+}
+
+
+ /*LINKS*/
+
+/*  a:link - defines the style for normal unvisited links
+    a:visited - defines the style for visited links
+    a:active - a link becomes active once you click on it
+    a:hover - a link is hovered when the mouse is over it
+    for several links, the compulsory order is; a:link and a:visited then- a:hover and lastly a:active*/
+.links a:hover{
+    color: red;
+    cursor: pointer;  
+}
+a:link {
+    text-decoration: none; /*removes underline*/ /*border:none-removes borders from images with links
+    outline:none - removes the dotted border on clicked lines in IE*/
+}
+
+
+/*DISPLAY*/
+.disp span{
+    display: block; /*inline | none(hides the text) | list-item | table | table-cell | table-column | grid */
+}
+.disp p{
+    visibility: hidden; /*visible | (hidden)maintains space but hides the text. (display:none doesn't reserve the space)*/
+}
+.fixed{
+    
+    position: fixed; /*|static;  maintains normal flow of the page   |fixed; can overlap other sections, doesn't move on scroll*/
+    top: 200px;
+    right: 100px;    /*the must be defined positions (top and left) otherwise the text won't show*/
+    color: rgba(0, 0, 255, 0.5);
+}
+.weeks p{
+    /*position: absolute; | Absolutely positioned elements OVERLAPS other elements. */
+    
+    border: 1px solid blue;
+}
+.weeks span {
+    position: relative; /*This value cannot be used for table cells, columns, column groups, rows, row groups, or captions. 
+    can be used with fixed position. also overlaps other divs*/
+    top: 200px;
+    left: 50px;
+    background-color: gray;
+}
+.sol{
+    width: 50%;
+    margin-top: 100px;
+    border: 1px solid goldenrod;
+}
+.sol img{
+    height: 20%;
+    width: 20%;
+    float: left;  /*elements are floated horizontally, meaning it can only be floated left or right, not up or down.*/   
+}
+.sol2 img{
+    height: 150px;
+    width: 150px;
+    float: left;
+}                       /*defining widths enables the two elements to float side by side*/
+.sol2 p {
+    float: left;
+    width: 300px;
+    font-size: 25px;
+    
+}
+.nxtp{
+    clear: both;        /*clears the float effect*/
+}
+.overflow{
+    margin-left: 37%;
+    height: 200px;
+    width: 30%;
+    background-color: mediumvioletred;
+    /*float: right;*/
+    overflow: scroll;   /*There are four values for the overflow property: visible (the default value)| scroll | hidden | auto.*/
+}
+
+
+.red {
+    background-color: fuchsia;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+    color: bisque;
+    position: relative;
+    z-index: 3;  /*higher z-index value to the blue div and a lower z-index value to the red div puts it on top of blue*/
+}
+/*The z-index works only on positioned elements (position:absolute, position:relative, or position:fixed).*/
+.blue{      /*naturally blue was on top of red because it is the recent div*/
+    background-color: slateblue;
+    width: 120px;
+    height: 120px;
+    margin-left: 50px;
+    margin-top: -50px;
+    position: relative;
+    z-index: 2;             /*it is a position switch of top and bottom*/
+    color: bisque;
+}
+
+
+
+        /*CSS THREE*/
+/*significant new features': Border radius | Border images | Transforms | Multiple backgrounds | Animations and effects, and much more! */
+/*prefixes are used to add new features that may not be part of the final and formal CSS specification. eg border-radius*/
+ 
+.css3{
+    background-color: khaki;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px 0 20px 0 ;  /*circle is achieved by border radius half of height and width*/
+    margin: 50px;
+    text-align: center;
+    box-shadow: /*inset*/ 20px 20px 10px 10px grey;     /*values;inset(inner-shadow) x-axis y-axis blur spread color*/ 
+   
+}
+.shadows {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.css4{
+    background-color: coral;
+    width: 200px;
+    height: 200px;
+    border-radius: 40px 0 40px 0 ; 
+    margin: 50px;
+    text-align: center;
+    box-shadow: inset 20px 20px 10px 10px grey,
+    inset -20px -20px 10px grey;     /*values;inset(inner-shadow) x-axis y-axis blur color*/ 
+    /*-ve values move the shadow in opposite direction. no -ve for blur*/
+}
+.css5{
+    
+    width: 300px;
+    height: 300px;
+    border-radius: 50px 0 50px 0 ; 
+    margin: 50px;
+    text-align: center;
+    box-shadow: 0 0 10px 4px yellowgreen,
+    0 0 10px 30px burlywood,
+    30px 0 20px 30px blueviolet;    
+}
+.clear{
+    background: url(/carnation.png);
+}
+nav{
+    padding: 50px 0;
+    min-width: 500px;
+    text-align: right; /*this reflects when placed at the parent div*/
+}
+nav ul {
+    background: linear-gradient(90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 25%,
+    rgba(255, 255, 255, 0.2) 75%,
+    rgba(255, 255, 255, 0) 100%);       /*creates a glasslike box*/
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+    inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+nav ul li{
+    display: inline-block;
+    
+}
+nav ul li a {
+    padding: 10px;
+    color: yellow;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+}
+.multi{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+    font-weight: 200; 
+    color: hotpink;
+    text-shadow:10px 20px 4px grey,
+    -3px 6px 5px #58d1e3;    /*x-shift, y-shift, blur-value, color*/
+    /*text shadow won't appear unless color value is specified*/
+    text-align: center;
+    letter-spacing: 10px;
+}
+/*          PSEUDO ELEMENTS(Start with double colon)
+::first-line - the first line of the text in a selector
+::first-letter - the first letter of the text in a selector
+::selection - selects the portion of an element that is selected by a user
+::before - inserts some content before an element
+::after - inserts some content after an element*/
+
+.multi ::first-letter{
+    font-size: 120px;       /*It worked!*/
+}
+.multi ::selection{        /*not supported in mozilla yet,. use -moz- prefix*/
+    color: purple;     /*when you select the text it turns purple*/
+}
+.break {
+    width: 200px;
+    height: 200px;
+    background-color: bisque;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    word-wrap: break-word;  /*removes spillover of words outside the div*/
+}
+/*@font-face {
+    font-family: "Sacramento";
+    src: url('/Sacramento-Regular.ttf');
+}
+@font-face {
+    font-family: "Sacramento";
+    font-weight: bold;
+    src: url('/Sacramento-Bold.ttf');
+}
+.font h1{
+    font-family: "Sacramento";
+}*/                             /*REVISIT*/
+
+
+.grad {
+    display: grid;
+    grid-template-columns: auto auto 40%;
+}
+.grad1{
+    
+    height: 200px;
+    margin: 10px;
+    color: yellow;
+    background: linear-gradient(/*left, |attribute not working*/ 90deg, DeepSkyBlue 10% , Black 20%, skyBlue 60%);
+}
+.grad2 {
+    
+    height: 200px;
+    margin: 10px;
+    color: yellow;
+    background: repeating-linear-gradient(orange, blue 50px);
+}
+.grad3 {
+    
+    height: 200px;
+    margin: 10px;
+    color: yellow;
+    background: radial-gradient(circle, blue, red, yellow); /*default shape is ellipse*/
+     /*position, shape/size, color stops.*/
+}
+
+.clips{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+/*background clips also work with image backgrounds*/
+.clip1{
+    border: 2px dotted black;
+    padding: 20px;
+    background: lightblue;
+    margin: 40px;
+    background-clip: padding-box;
+}
+.clip2{
+    border: 2px dotted black;
+    padding: 20px;
+    background: lightblue;
+    margin: 40px 0;
+    background-clip: content-box;
+}
+.clip3{
+    border: 20px solid rgba(0, 0, 0, 0.3);
+    margin: 30px;
+    background-clip: padding-box;
+    background-clip: padding-box;       /*sets transparent border*/
+    /*Transparency effect is achieved with the background-clip:padding-box. 
+    Without it, the background of the box also goes beneath the borders, making it non-transparent.*/
+    /*#how to overlay a box on text*/
+}
+.multiple{              /*multiple backgrounds*/
+    width: 400px;
+    height: 300px;
+    background-image: url(/carnation.png) , url(/Logo_-_Sauti_Sol_3-removebg-preview.png);
+    background-position: right bottom, left top;    /*can alternate to change image positions*/
+    background-repeat: no-repeat;
+    /*shorthand background: url(image.jpg) right top no-repeat, url(image2.png)left top no-repeat; */
+    transform: rotate(20deg);       /*-ve values=anticlockwise*/
+    transform-origin: 25% 75%;      /*x axis y-axis*/
+}
+
+
+    /*TRANSITIONS*/
+.trans{
+    width: 50px;
+    height: 50px;
+    background-color: salmon;
+    transition: width 3s;
+    margin: 30px;
+}
+.trans:hover {
+    width: 250px;
+}
+.trans2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: background-color 5s ease-in;
+    /*transition-timing-function: cubic-bezier(0,0,1,1);*/
+    /*ease | ease-in | ease-in-out | linear(best for color/opacity change)*/
+    transform: translate(100px 50px);    
+    /*translate is recommended for animating elements than margin and positioning..*/
+    transform: skew(20deg);
+    /*transform: scale(4);      increases size*/
+    /*multiple functions _ transform: rotate(45deg) translate(100px); *dont use comas*/
+}
+.trans2:hover {
+    background-color: aqua;
+}
+.chameleon{
+    margin: 30px;
+    height: 500px;
+    width: 50%;
+    animation-name: colorchange;
+    animation-duration: 5s; /*If the animation-duration property is not specified, the animation will have no effect, because the default value is 0.*/
+    animation-timing-function: ease-in;
+    /*animation-timing-functions - ease | ease-in | ease-in-out | linear | ease-out | cubic-bezier(n,n,n,n)*/
+    animation-delay: 2s;        /*defines the delay before an animation starts.*/
+    animation-iteration-count: infinite;    /*determines the number of times an animation repeats.*/
+    animation-direction: alternate; /*normal | reverse | alternate | alternate-reverse*/
+    /*[shorthand]   animation:colorchange 3s ease-in 1s infinite reverse; */
+    /*The order in the shorthand declaration is important and cannot be altered, or the animation will not work properly.*/
+}
+@keyframes colorchange {
+    from{width: opx;}
+    to{width: 100px;}
+    0% {background-color: red}
+    25% {background-color: orangered;}
+    50% {background-color: yellow;}
+    75% {background-color: green;}
+    100% {background-color: blue;}
+}
+
+/*3D TRANSFORMS]    transform: translate3d(-20px, 4em, 10px); | X Y Z
+rotate              transform: rotate3d(150deg, 150deg, 150deg)
+scale               transform: scale3d
+PERSPECTIVE         perspective: 100px;*/
+
+/*PERSPECTIVES  defines how the depth of the 3D scene is rendered.
+When defining the perspective property for an element, it is the child elements that get the perspective view, not the element itself.
+The perspective property only affects 3D transformed elements.*/
+
+/* CSS FILTERS 
+Filter functions include blur(px), brightness(>%), contrast(>%), drop-shadow(), |filter: grayscale(100%); |, 
+| filter: hue-rotate(180deg); |, invert(%), opacity(%), saturate(>%) and sepia(%).
+shorthand] filter: saturate(30%) drop-shadow(5px 9px 2px gray) blur(1px);
+DROP-SHADOW(width height blur color)*/                                                                               

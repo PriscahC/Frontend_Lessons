@@ -1,0 +1,70 @@
+
+html {
+    background-color: #F2C5B2;
+}
+.main {
+    padding: 50px;
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+    width: 80vw;
+
+}
+.title a {
+    text-decoration: none;
+    font-family: 'Sacramento', cursive;
+    font-size: 30px;
+}
+
+.icons {line-height: 50px; margin: 100px 50px;
+}
+line {
+    stroke: #D9C972; 
+    stroke-width: 5px;    
+}
+.center {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;    
+    justify-content: space-evenly;
+    padding: 50px 100px;
+    position: relative;   
+}
+.phrase {
+    position: absolute;
+    bottom: -50px;
+    margin-left: 50px;
+    display: flex;
+}
+#img2 {
+    margin-top: 50px;
+}
+.phrase span {
+    font-family: IBM Plex Serif;
+}
+.grey {
+    background-color: #E4E4E4;
+    max-width: 32%;
+    height: 410px;
+}
+.line2 {
+    position: relative;
+}
+.ln2b  { 
+    position: absolute;
+    bottom: 0;
+}
+.minipics {
+    display: flex;
+    margin-top: 80px;
+    margin-left: 80px;
+    margin-bottom: 70px;
+}
+footer {
+    display: grid;
+    grid-template-columns: 75% 15%;
+    margin-top: 150px;
+}
